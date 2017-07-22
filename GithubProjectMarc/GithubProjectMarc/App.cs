@@ -14,18 +14,17 @@ namespace GithubProjectMarc
             // The root page of your application
             MainPage = new ContentPage
             {
-                Content = new StackLayout
+                Content = new Label()
                 {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            XAlign = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
+
+
+                    Text = "Welcome to Xamarin!",
+                    TextColor = Color.Red
+                },
+                BackgroundColor = Color.Purple
             };
-        }
+            }
+            
 
         protected override void OnStart()
         {
